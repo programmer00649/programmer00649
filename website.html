@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع شخصي مدمج</title>
+    <style>
+        /* Reset and General Styles */
+        body {
+            font-family: 'Tajawal', sans-serif; /* A nice Arabic font */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            direction: rtl;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+
+        /* Main Content Sections */
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(to bottom, #007BFF, #0056b3);
+            color: #fff;
+            padding: 6rem 2rem;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #007BFF;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: right;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #007BFF;
+        }
+
+        /* Contact Section */
+        #contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#hero" class="logo">جول</a>
+            <ul>
+                <li><a href="#about">عني</a></li>
+                <li><a href="#projects">مشاريعي</a></li>
+                <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>أهلاً بك في موقعي الشخصي</h1>
+                <p>أنا مطور واجهات أمامية ومصمم ويب. استمتع بتصفح أعمالي!</p>
+                <a href="#projects" class="cta-button">شاهد مشاريعي</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>عني</h2>
+            <p>أنا مطور برمجيات شغوف، متخصص في إنشاء تجارب ويب حديثة وتفاعلية. لدي خبرة في HTML, CSS, و JavaScript، وأحب تعلم تقنيات جديدة باستمرار.</p>
+        </section>
+
+        <section id="projects">
+            <h2>مشاريعي</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>مشروع 1</h3>
+                    <p>وصف قصير للمشروع الأول. يمكن أن يكون تطبيق ويب أو موقع تعريفي.</p>
+                </div>
+                <div class="project-card">
+                    <h3>مشروع 2</h3>
+                    <p>وصف قصير للمشروع الثاني. يمكن أن يكون أداة أو مكتبة برمجية.</p>
+                </div>
+                <div class="project-card">
+                    <h3>مشروع 3</h3>
+                    <p>وصف قصير للمشروع الثالث. مثال آخر على الأعمال التي قمت بها.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>تواصل معي</h2>
+            <p>يمكنك التواصل معي عبر البريد الإلكتروني: <a href="mailto:example@example.com">example@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('nav ul li a[href^="#"]');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Smooth scrolling for the CTA button in the hero section
+            const ctaButton = document.querySelector('.cta-button[href^="#"]');
+            if (ctaButton) {
+                ctaButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
